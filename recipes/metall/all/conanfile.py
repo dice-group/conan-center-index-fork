@@ -25,9 +25,12 @@ class MetallConan(ConanFile):
         basic_layout(self, src_folder="src")
 
     def requirements(self):
-        # boost 1.91 changed the signature of boost::interprocess named_proxy::construct_n,
-        # metall calls it with the signature of boost 1.90 and older
-        self.requires("boost/[>=1.81 <1.91]")
+        if Version(self.version) >= "0.35":
+            self.requires("boost/[>=1.81 <2]")
+        else:
+            # boost 1.91 changed the signature of boost::interprocess named_proxy::construct_n,
+            # metall before 0.35 calls it with the signature of boost 1.90 and older
+            self.requires("boost/[>=1.81 <1.91]")
 
     def package_id(self):
         self.info.clear()
