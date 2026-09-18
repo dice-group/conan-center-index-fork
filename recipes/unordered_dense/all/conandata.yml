@@ -1,7 +1,7 @@
 sources:
   "5.0.2":
-    url: "https://github.com/dice-group/unordered_dense/archive/6a5c7c2dc8400df781775b2e94661ef82aafb727.tar.gz"
-    sha256: "2d5f9648fddda8bd8c3f0f6a7f6286a27218dff8598a4204cbdbf59aae1af8af"
+    url: "https://github.com/dice-group/unordered_dense/archive/ad38570a42ba5e2e492c76174cd42e85cd3b6144.tar.gz"
+    sha256: "2e09656145ea2989964a8c49f00499caef43961860d9506290c01bb0201f14f3"
   "4.9.2":
     url: "https://github.com/martinus/unordered_dense/archive/v4.9.2.tar.gz"
     sha256: "abe3b267cbec3094bd7ca84a9990d7723a8d3dda141e08c67e295e3175f6ee28"
